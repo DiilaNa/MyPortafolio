@@ -78,3 +78,10 @@ button:hover{
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); /* Soft white glow */
     transform: scale(1.1); /* Slightly enlarges on hover */
 }
+#about{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 3px solid white;
+}
