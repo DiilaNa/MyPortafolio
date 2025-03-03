@@ -93,3 +93,9 @@ button:hover{
     top: 25px;
     position: relative;
 }
+#about div{
+    padding: 20px;
+    font-size: 30px;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
