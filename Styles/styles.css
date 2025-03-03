@@ -84,3 +84,12 @@ button:hover{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
+#about>h2{
+    text-align: center;
+    font-weight: bolder;
+    color: #5007BE;
+    font-size: 45px;
+    grid-column: span 2;
+    top: 25px;
+    position: relative;
+}
