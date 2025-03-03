@@ -110,3 +110,38 @@ button:hover{
     width: 100vw;
     position: relative;
 }
+#eduDescription{
+    top: 300px;
+    bottom: 0;
+    left: 200px;
+    position: absolute;
+    margin: auto;
+}
+#eduDescription>h2{
+    font-size: 40px;
+    color: deeppink;
+
+}
+#education .school{
+    line-height: 1.5;
+    margin: auto;
+    position: absolute;
+}
+#education .school:nth-child(2){
+    top: 80px;
+    right: 210px;
+
+}
+#education .school:nth-child(3){
+    top: 230px;
+    right: 650px;
+
+}
+#education .school:nth-child(4){
+    top: 400px;
+    right: 280px;
+}
+#education .school:nth-child(5){
+    top: 530px;
+    right: 650px;
+}
