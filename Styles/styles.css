@@ -150,5 +150,26 @@ button:hover{
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    border: 1px solid white;
+    position: relative;
+}
+#skills>h2{
+    position: relative;
+    font-size: 4em;
+    top: 25px;
+    text-align: center;
+    color: #5007BE;
+}
+.skills{
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+}
+.skills img{
+    margin: 65px;
+    border-radius: 50%;
+}
+.skills img:hover{
+    cursor: pointer;
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.7));
+    transform: scale(1.1);
 }
