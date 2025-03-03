@@ -7,6 +7,63 @@
     <link rel="stylesheet" href="Lib/fontawesome/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="Styles/styles.css">
+    <style>
+        #myWorks{
+            display: grid;
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+        #myWorks>h2{
+            top: 30px;
+            font-size: 45px;
+            font-weight: bold;
+            position: relative;
+            text-align: center;
+        }
+        #tic-tac-toe{
+            top: 150px;
+            left: 75px;
+            position: absolute;
+            margin: auto;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #tic-tac-desc{
+            top: 200px;
+            left: 450px;
+            position: absolute;
+            margin: auto;
+            font-size: 22px;
+
+        }
+
+        #petCAre-desc{
+            margin: auto;
+            position: absolute;
+            top: 550px;
+            left: 150px;
+            font-size: 22px;
+
+        }
+        #pet-care{
+            margin: auto;
+            position: absolute;
+            top: 450px;
+            right: 225px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #pet-care>h3{
+            text-align: center;
+            color:#5858e3 ;
+        }
+        #tic-tac-toe>h3{
+            text-align: center;
+            color:#5858e3 ;
+        }
+
+    </style>
 </head>
 <body><!----------------- Header ---------------------------->
 <header id="header">
@@ -87,36 +144,47 @@
 <section id="skills">
     <h2>Skills</h2>
     <div class="skills">
-        <img src="Assests/icons/skillJava.png" title="java" alt="java" width="180">
-        <img src="Assests/icons/skillMysql.png" title="mysql" alt="mysql" width="180">
-        <img src="Assests/icons/skillSceneBuilder.png" title="sb" alt="sb" width="180">
-        <img src="Assests/icons/skillCSS.png" title="css" alt="css" width="180">
+        <img src="Assests/icons/skillJava.png" title="java" alt="java" width="170">
+        <img src="Assests/icons/skillMysql.png" title="mysql" alt="mysql" width="170">
+        <img src="Assests/icons/skillSceneBuilder.png" title="sb" alt="sb" width="170">
+        <img src="Assests/icons/skillCSS.png" title="css" alt="css" width="170">
+        <img src="Assests/icons/skillsJavaScript.png" title="javascript" alt="javascript" width="170">
     </div>
 
     <div class="skills">
-        <img src="Assests/icons/skillHtml.png" title="html" alt="html" width="180">
-        <img src="Assests/icons/skillPython.png" title="python" alt="python" width="180">
-        <img src="Assests/icons/skillFigma.png" title="figma" alt="figma" width="180">
-        <img src="Assests/icons/skillC.png" title="c" alt="c" width="180">
+        <img src="Assests/icons/skillHtml.png" title="html" alt="html" width="170">
+        <img src="Assests/icons/skillPython.png" title="python" alt="python" width="170">
+        <img src="Assests/icons/skillFigma.png" title="figma" alt="figma" width="170">
+        <img src="Assests/icons/skillc-sharp.png" title="c" alt="c" width="170">
+        <img src="Assests/icons/skillReact.png" title="react" alt="react" width="170">
     </div>
 </section>
 
 <!--------------------------- My Works---------------------------->
 <section id="myWorks">
     <h2>My Works</h2>
-    <div>
-        <img src="Assests/icons/iconTicTacToe.png" title="ticTacToe" alt="ticTacToe" width="120">
+    <div id="tic-tac-toe">
+        <img  src="Assests/icons/tic-tac-toe.png" title="ticTacToe" alt="ticTacToe" width="280">
         <h3>Tic-Tac-Toe Game</h3>
+    </div>
+    <div id="tic-tac-desc">
         <p>
-            This is my first java based game which is developed as a part of my academic journey.
+            Tic-Tac-Toe: Championship Edition is a JavaFX-based game that I developed, incorporating advanced Object-Oriented Programming (OOP) principles. The game features an interactive UI built with Scene Builder and implements the Minimax algorithm for AI, allowing players to challenge a smart computer opponent. It supports single-player and two-player modes, ensuring an engaging experience. The project also includes a well-structured class design, using enumerations, recursion, and interfaces to enhance code efficiency and maintainability.
         </p>
     </div>
-    <div>
-        <p>
-            This is my final project for the first semester, an application for a Pet Care Management System developed as part of my academic journey.
-        </p>
-        <img src="Assests/icons/petcare.png" title="petcare" alt="petcare" width="120">
+    <div id="pet-care">
+        <img  src="Assests/icons/petcare.png" title="petcare" alt="petcare" width="450">
         <h3>Pet Care Management System</h3>
+    </div>
+    <div id="petCAre-desc">
+        <p>
+            This is my final project for the first semester - JavaFX-based application <br>
+            designed to streamline the management of a pet care center. It allows users <br>
+            to efficiently handle  appointments, health records, and communication with <br>
+            pet owners. The system provides features such as SMS reminders, jasper reports <br>
+            for tracking of pet health information. The UI is user-friendly, built using <br>
+            Scene Builder, and is designed to simplify staff operations.
+        </p>
     </div>
 </section>
 

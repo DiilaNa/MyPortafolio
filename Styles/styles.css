@@ -28,11 +28,9 @@ header{
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr) ;
-    border: 2px solid black;
     position: relative;
 }
 #home div:first-child{
-    border: 2px solid black;
     bottom: 100px;
     margin: auto;
     position: relative;
@@ -165,7 +163,7 @@ button:hover{
     height: fit-content;
 }
 .skills img{
-    margin: 65px;
+    margin: 50px;
     border-radius: 50%;
 }
 .skills img:hover{
