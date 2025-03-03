@@ -99,3 +99,7 @@ button:hover{
     line-height: 1.5;
     word-wrap: break-word;
 }
+#aboutMePicture{
+    left: 150px;
+    position: relative;
+}
