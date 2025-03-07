@@ -7,7 +7,76 @@
     <link rel="stylesheet" href="Lib/fontawesome/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="Styles/styles.css">
+<style>
+    #contact{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        position: relative;
+    }
+    #contact > h1{
+        text-align: center;
+        font-size: 50px;
+    }
+    .contact-form{
+        top: 150px;
+        position: absolute;
+        width: 45%;
+    }
+    .contact-form #contact-details{
+        left: 150px;
+        margin: auto;
+        position: absolute;
 
+    }
+
+    #contact-details h3 {
+        color: #5858e3;
+        font-size: 30px;
+        padding-bottom: 12px;
+    }
+    #contact-details p {
+        color: whitesmoke;
+        font-size: 22px;
+        padding-bottom: 12px;
+    }
+      #my_details h4{
+        font-size: 21px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        color: #8282f4;
+    }
+    .contact-form #send_message{
+        display: flex;
+        top: 50px;
+        left: 1000px;
+        width: 45%;
+        bottom: 0;
+        margin: auto;
+        position: absolute;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .contact-form #send_message input{
+        font-size: 18px;
+        border-radius: 5px;
+        line-height: 25px;
+        padding: 15px 80px 15px 45px;
+        border: 1px solid #5858e3;
+    }
+    .contact-form #send_message input:nth-child(4){
+        padding-bottom: 120px;
+        padding-right: 90px;
+
+    }
+    .contact-form #send_message button{
+        width: 150px;
+        padding: 5px 8px 5px 5px;
+        background-color: #5007BE;
+        border-radius: 5px;
+
+    }
+</style>
 </head>
 <body><!----------------- Header ---------------------------->
 <header id="header">
@@ -151,19 +220,34 @@
 <!--------------------------- Contact Me---------------------------->
 
 <section id="contact">
-    <h2>Contact Me</h2>
-    <h3>
-        Get in Touch
-    </h3>
-    <p>
-        Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be a part of your visions. Email me with any questions or inquiries. I'll happy to answer your questions and set up a meeting with you.
-    </p>
-    <h4>Name - Dilan Liyanaarachchi </h4>
-        <h4>Address - 301/B/02,Sri Sangananda Mawatha,Raigama,Bandaragama </h4>
-            <h4>Email - liyanaarachchidilan@gmail.com </h4>
+    <h1>Contact Me</h1>
+    <div class="contact-form">
+        <div id="contact-details">
+            <h3>
+                Get in Touch
+            </h3>
+            <p>
+                Feel free to get in touch with me. I am always open to <br>
+                discussing new projects, creative ideas or opportunities<br>
+                to be a part of your visions. Email me with any questions <br>
+                or inquiries. I'll happy to answer your questions and set up <br>
+                a meeting with you.
+            </p>
+            <div id="my_details">
+                <h4>Name - Dilan Liyanaarachchi </h4>
+                <h4>Address - 301/B/02,Sri Sangananda Mawatha,Raigama,Bandaragama </h4>
+                <h4>Email - liyanaarachchidilan@gmail.com </h4>
+            </div>
+        </div>
+        <div id="send_message">
+            <input type="text" placeholder="Enter Your Name">
+            <input type="text" placeholder="Enter Your Email">
+            <input type="text" placeholder="Subject">
+            <input type="text" placeholder="Message"><br>
+            <button id="sendBtn">Send</button>
+        </div>
+    </div>
 </section>
-
-
 <script src="Lib/fontawesome/js/all.js"></script>
 </body>
 </html>
