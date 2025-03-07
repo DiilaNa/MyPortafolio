@@ -15,7 +15,6 @@
     top: 0;
     left: 0;
     z-index: 1000;
-
 }
 #nav-section{
     background-color: transparent;
@@ -25,7 +24,11 @@
     font-weight: bold;
     text-decoration: none;
     color: white;
-    margin-right: 15px;
+    margin:0 15px;
+    transition: color 0.3s ease-in-out;
+}
+#nav-section a:hover{
+    color: #000000;
 }
 #home{
     width: 100%;
