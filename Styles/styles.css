@@ -225,3 +225,21 @@ button:hover{
     text-align: center;
     color:#5858e3 ;
 }
+#gallery{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    margin: auto;
+    box-sizing: border-box;
+}
+#gallery > h1 {
+    text-align: center;
+    font-size: 50px;
+}
+.images{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
