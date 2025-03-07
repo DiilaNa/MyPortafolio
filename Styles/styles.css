@@ -96,7 +96,7 @@ button:hover{
     color: #5007BE;
     font-size: 45px;
     grid-column: span 2;
-    top: 25px;
+    margin-top: 50px;
     position: relative;
 }
 #about div{
