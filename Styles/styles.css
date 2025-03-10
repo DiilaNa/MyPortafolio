@@ -1,5 +1,5 @@
 *{
-       margin: 0;
+    margin: 0;
     padding: 0;
     background-color: black;
     color: white;
@@ -13,7 +13,6 @@
     justify-content: right;
     position: fixed;
     top: 0;
-    left: 0;
     z-index: 1000;
 }
 #nav-section{
@@ -125,8 +124,7 @@ button:hover{
 }
 #eduDescription>h2{
     font-size: 40px;
-    color: deeppink;
-
+    color: #ae81e1;
 }
 #education .school{
     line-height: 1.5;
@@ -136,12 +134,10 @@ button:hover{
 #education .school:nth-child(2){
     top: 80px;
     right: 210px;
-
 }
 #education .school:nth-child(3){
     top: 230px;
     right: 650px;
-
 }
 #education .school:nth-child(4){
     top: 400px;
@@ -173,8 +169,6 @@ button:hover{
 .skills img{
     margin: 50px;
     border-radius: 50%;
-  /*  width: 100px;
-    height: 100px;*/
     object-fit: cover;
     transition: all 0.3s ease-in-out;
 }
@@ -210,16 +204,13 @@ button:hover{
     position: absolute;
     margin: auto;
     font-size: 22px;
-
 }
-
 #petCAre-desc{
     margin: auto;
     position: absolute;
     top: 550px;
     left: 150px;
     font-size: 22px;
-
 }
 #pet-care{
     margin: auto;
@@ -274,9 +265,7 @@ button:hover{
     left: 150px;
     margin: auto;
     position: absolute;
-
 }
-
 #contact-details h3 {
     color: #5858e3;
     font-size: 30px;
@@ -313,12 +302,10 @@ button:hover{
 .contact-form #send_message input:nth-child(4){
     padding-bottom: 120px;
     padding-right: 90px;
-
 }
 .contact-form #send_message button{
     width: 150px;
     padding: 5px 8px 5px 5px;
     background-color: #5007BE;
     border-radius: 5px;
-
 }
