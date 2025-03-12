@@ -49,10 +49,10 @@
     color: #5007BE;
 }
 #home div:last-child{
-    bottom: 50px;
-    right: 175px;
+    top: 175px;
+    right: 125px;
     margin: auto;
-    position: relative;
+    position: absolute;
 }
 #hire_button{
     width: 150px;
