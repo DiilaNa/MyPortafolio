@@ -37,7 +37,7 @@
     position: relative;
     padding-top: 100px;
 }
-#home div:first-child{
+#desc{
     bottom: 100px;
     margin: auto;
     position: relative;
@@ -48,8 +48,10 @@
 #desc h2 {
     color: #5007BE;
 }
-#home div:last-child{
-    top: 175px;
+#desc2{
+    width: 500px;
+    height: auto;
+    top: 150px;
     right: 125px;
     margin: auto;
     position: absolute;
@@ -308,4 +310,60 @@ button:hover{
     padding: 5px 8px 5px 5px;
     background-color: #5007BE;
     border-radius: 5px;
+}
+@media all and (max-width: 1300px){
+    #picture {
+        width: 80%;
+
+    }
+    #desc>h1{
+        font-size: 30px;
+    }
+    #desc> h2,h3{
+        font-size: 25px;
+    }
+    .button{
+        width: 130px ;
+        height: 35px;
+    }
+}
+
+@media all and (max-width: 1200px)  {
+    #picture {
+        width: 70%; /* Reduce size to 70% */
+        position: sticky !important;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    #desc h1,h2,h3{
+        color: deeppink;
+    }
+    #desc{
+        position: relative;
+        top: 150px;
+        left: 250px;
+    }
+}
+
+@media all and (max-width: 700px)  {
+    #picture{
+        width: 70%;
+
+    }
+     h1,h2,h3{
+        color: yellow;
+    }
+
+}
+
+@media all and (max-width: 500px) {
+    #picture {
+        width: 70%;
+
+    }
+
+    h1,h2,h3{
+        color: green;
+    }
 }
