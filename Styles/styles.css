@@ -311,59 +311,258 @@ button:hover{
     background-color: #5007BE;
     border-radius: 5px;
 }
-@media all and (max-width: 1300px){
-    #picture {
+/* Large devices (desktops) */
+@media all and (max-width: 1200px) {
+    #home {
+        grid-template-columns: 1fr;
+        height: auto;
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+
+    #desc {
+        position: static;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    #desc2 {
+        position: static;
         width: 80%;
+        max-width: 400px;
+        margin: 0 auto;
+        right: auto;
+        top: auto;
+    }
 
+    #picture {
+        width: 100%;
     }
-    #desc>h1{
-        font-size: 30px;
+
+    /* Adjust about section */
+    #about {
+        height: auto;
+        padding: 40px 0;
     }
-    #desc> h2,h3{
-        font-size: 25px;
+
+    #aboutMePicture {
+        left: 0;
+        margin: 0 auto;
+        display: block;
+        max-width: 300px;
+        width: 100%;
     }
-    .button{
-        width: 130px ;
-        height: 35px;
+
+    #about div {
+        font-size: 22px;
     }
 }
 
-@media all and (max-width: 1200px)  {
-    #picture {
-        width: 70%; /* Reduce size to 70% */
-        position: sticky !important;
-        display: grid;
+/* Medium devices (tablets) */
+@media all and (max-width: 992px) {
+    #header {
         justify-content: center;
-        align-items: center;
     }
-    #desc h1,h2,h3{
-        color: deeppink;
+
+    #nav-section a {
+        font-size: 16px;
+        margin: 0 10px;
     }
-    #desc{
-        position: relative;
-        top: 150px;
-        left: 250px;
+
+    /* Education section adjustments */
+    #education {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 50px 0;
+    }
+
+    #eduDescription {
+        position: static;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    #education .school {
+        position: static;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    /* Skills section adjustments */
+    #skills {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .skills img {
+        margin: 20px;
+        width: 120px;
+    }
+
+    /* My Works section */
+    #myWorks {
+        height: auto;
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #tic-tac-toe, #pet-care {
+        position: static;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    #tic-tac-desc, #petCAre-desc {
+        position: static;
+        margin: 20px auto;
+        text-align: center;
+        max-width: 80%;
     }
 }
 
-@media all and (max-width: 700px)  {
-    #picture{
-        width: 70%;
-
-    }
-     h1,h2,h3{
-        color: yellow;
+/* Small devices (landscape phones) */
+@media all and (max-width: 768px) {
+    #nav-section a {
+        font-size: 14px;
+        margin: 0 5px;
     }
 
+    #about {
+        grid-template-columns: 1fr;
+    }
+
+    #about div {
+        font-size: 18px;
+    }
+
+    /* Gallery adjustments */
+    #gallery {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .images {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .images img {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    /* Contact section */
+    #contact {
+        height: auto;
+        padding: 40px 0 80px;
+    }
+
+    .contact-form {
+        position: static;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-form #contact-details,
+    .contact-form #send_message {
+        position: static;
+        width: 100%;
+        margin: 20px auto;
+        left: auto;
+    }
 }
 
-@media all and (max-width: 500px) {
-    #picture {
-        width: 70%;
-
+/* Extra small devices (phones) */
+@media all and (max-width: 576px) {
+    #header {
+        height: auto;
+        padding: 10px 0;
+        flex-wrap: wrap;
     }
 
-    h1,h2,h3{
-        color: green;
+    #nav-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #nav-section a {
+        margin: 5px;
+    }
+
+    #desc h1 {
+        font-size: 24px;
+    }
+
+    #desc h2 {
+        font-size: 20px;
+    }
+
+    #hire_button, #download_btn {
+        display: block;
+        margin: 10px auto;
+        position: static;
+    }
+
+    /* Skills section */
+    .skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .skills img {
+        width: 80px;
+        margin: 15px;
+    }
+
+    /* Gallery */
+    .images {
+        grid-template-columns: 1fr;
+    }
+
+    /* Form adjustments */
+    .contact-form #send_message input {
+        padding: 10px;
+    }
+
+    .contact-form #send_message input:nth-child(4) {
+        padding-bottom: 60px;
+        padding-right: 10px;
+    }
+
+    #my_details h4 {
+        font-size: 16px;
+    }
+}
+
+/* Mobile phones (very small) */
+@media all and (max-width: 400px) {
+    #nav-section a {
+        font-size: 12px;
+        margin: 3px;
+    }
+
+    #about div {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    #about>h2, #skills>h2, #myWorks>h2, #contact>h1, #gallery>h1 {
+        font-size: 30px;
+        margin: 40px 10px 20px;
+    }
+
+    .skills img {
+        width: 70px;
+        margin: 10px;
+    }
+
+    #eduDescription h2 {
+        font-size: 30px;
     }
 }
