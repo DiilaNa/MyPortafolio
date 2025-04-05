@@ -311,107 +311,324 @@ button:hover{
     background-color: #5007BE;
     border-radius: 5px;
 }
-@media all and (max-width: 1024px) {
-    #home,#header{
-        width: 1024px;
+/* Your existing CSS stays the same */
+
+/* Large devices (desktops) */
+@media all and (max-width: 1200px) {
+    #home {
+        grid-template-columns: 1fr;
+        height: auto;
+        padding-top: 80px;
+        padding-bottom: 50px;
     }
-    #picture {
-        width: 65%;
-        position: relative;
-        display: block;
-        margin: auto;
+
+    /* Reorder elements - profile picture first */
+    #desc2 {
+        position: static;
+        width: 80%;
+        max-width: 400px;
+        margin: 0 auto 30px;
+        right: auto;
+        top: auto;
+        order: 1;
     }
+
     #desc {
-        font-size: 20px;
-        top: 120px;
-        left: 200px;
+        position: static;
+        margin: 20px auto;
+        text-align: center;
+        order: 2;
     }
-    h1, h2, h3 {
-        color: orange;
+
+    #picture {
+        width: 100%;
+    }
+
+    /* Adjust about section */
+    #about {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    #aboutMePicture {
+        left: 0;
+        margin: 0 auto;
+        display: block;
+        max-width: 300px;
+        width: 100%;
+    }
+
+    #about div {
+        font-size: 22px;
     }
 }
 
-@media all and (max-width: 900px) {
-    #home , #header{
-        width: 900px;
+/* Medium devices (tablets) */
+@media all and (max-width: 992px) {
+    #header {
+        justify-content: center;
     }
-    #picture {
-        width: 60%;
-        position: relative;
-        display: block;
-        margin: auto;
+
+    #nav-section a {
+        font-size: 16px;
+        margin: 0 10px;
     }
+
+    /* Home section - reorder elements */
+    #home {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #desc2 {
+        order: 1;
+    }
+
     #desc {
-        font-size: 18px;
+        order: 2;
+    }
+
+    /* Education section adjustments */
+    #education {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 50px 0;
+    }
+
+    #eduDescription {
+        position: static;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    #education .school {
+        position: static;
+        margin: 20px auto;
         text-align: center;
     }
+
+    /* Skills section adjustments */
+    #skills {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .skills img {
+        margin: 20px;
+        width: 120px;
+    }
+
+    /* My Works section */
+    #myWorks {
+        height: auto;
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #tic-tac-toe, #pet-care {
+        position: static;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    #tic-tac-desc, #petCAre-desc {
+        position: static;
+        margin: 20px auto;
+        text-align: center;
+        max-width: 80%;
+    }
+}
+
+/* Small devices (landscape phones) */
+@media all and (max-width: 768px) {
+    #nav-section a {
+        font-size: 14px;
+        margin: 0 5px;
+    }
+
+    /* Profile picture sizing */
+    #desc2 {
+        max-width: 350px;
+    }
+
+    #about {
+        grid-template-columns: 1fr;
+    }
+
+    #about div {
+        font-size: 18px;
+    }
+
+    /* Gallery adjustments */
+    #gallery {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .images {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .images img {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    /* Contact section */
+    #contact {
+        height: auto;
+        padding: 40px 0 80px;
+    }
+
+    .contact-form {
+        position: static;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-form #contact-details,
+    .contact-form #send_message {
+        position: static;
+        width: 100%;
+        margin: 20px auto;
+        left: auto;
+    }
+}
+
+/* Extra small devices (phones) */
+@media all and (max-width: 576px) {
+    #header {
+        height: auto;
+        padding: 10px 0;
+        flex-wrap: wrap;
+    }
+
+    #nav-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #nav-section a {
+        margin: 5px;
+    }
+
+    /* Profile picture first, then headings */
+    #home {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #desc2 {
+        order: 1;
+        max-width: 280px;
+        margin-bottom: 20px;
+    }
+
+    #desc {
+        order: 2;
+    }
+
+    #desc h1 {
+        font-size: 24px;
+    }
+
+    #desc h2 {
+        font-size: 20px;
+    }
+
     #hire_button, #download_btn {
+        display: inline-block;
+        margin: 15px 5px;
+        position: static;
         width: 120px;
         height: 40px;
+        font-size: 14px;
     }
-    h1, h2, h3 {
-        color: cyan;
+
+    /* Skills section */
+    .skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .skills img {
+        width: 80px;
+        margin: 15px;
+    }
+
+    /* Gallery */
+    .images {
+        grid-template-columns: 1fr;
+    }
+
+    /* Form adjustments */
+    .contact-form #send_message input {
+        padding: 10px;
+    }
+
+    .contact-form #send_message input:nth-child(4) {
+        padding-bottom: 60px;
+        padding-right: 10px;
+    }
+
+    #my_details h4 {
+        font-size: 16px;
     }
 }
 
-@media all and (max-width: 768px) {
-    #home,#header{
-        width: 768px;
+/* Mobile phones (very small) */
+@media all and (max-width: 400px) {
+    #nav-section a {
+        font-size: 12px;
+        margin: 3px;
     }
-    #picture {
-        width: 55%;
-        position: relative;
-        margin: auto;
+
+    /* Smaller profile picture for tiny screens */
+    #desc2 {
+        max-width: 220px;
     }
-    #desc {
+
+    #desc h1 {
+        font-size: 22px;
+    }
+
+    #desc h2 {
+        font-size: 18px;
+    }
+
+    #desc h3 {
         font-size: 16px;
-        top: 100px;
-        left: 100px;
     }
-    h1, h2, h3 {
-        color: lightblue;
-    }
-    .button {
+
+    #hire_button, #download_btn {
         width: 110px;
         height: 35px;
-    }
-}
-
-@media all and (max-width: 600px) {
-    #home, #header{
-        width: 600px;
-    }
-    #picture {
-        width: 50%;
-        position: relative;
-        top: 80px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    #desc {
-        font-size: 14px;
-        text-align: center;
-    }
-    h1, h2, h3 {
-        color: purple;
-    }
-}
-
-@media all and (max-width: 400px) {
-    #home ,#header{
-        width: 400px;
-    }
-    #picture {
-        width: 45%;
-        top: 70px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    #desc {
         font-size: 12px;
-        text-align: center;
     }
-    h1, h2, h3 {
-        color: red;
+
+    #about div {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    #about>h2, #skills>h2, #myWorks>h2, #contact>h1, #gallery>h1 {
+        font-size: 30px;
+        margin: 40px 10px 20px;
+    }
+
+    .skills img {
+        width: 70px;
+        margin: 10px;
+    }
+
+    #eduDescription h2 {
+        font-size: 30px;
     }
 }
