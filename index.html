@@ -3,138 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <title>Dilan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Lib/normalize.css">
+    <link rel="stylesheet" href="Lib/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="Styles/styles.css">
 </head>
-<body><!----------------- Header ---------------------------->
-<HEADER>
-    <nav>
+<body>
+
+<!----------------- Header ---------------------------->
+<header id="header">
+    <nav id="nav-section">
         <a href="#home">Home</a>
         <a href="#about">About Me</a>
         <a href="#skills">Skills</a>
         <a href="#myWorks">My Works</a>
         <a href="#gallery">Gallery</a>
         <a href="#contact">Contact</a>
-        </nav>
-</HEADER>
+    </nav>
+</header>
 
-<!----------------- Heroo ---------------------------->
-
+<!----------------- Hero Section ---------------------------->
 <section id="home">
-    <div>
-    <h2>Hi, I am Dilan Liyanaarachchi</h2>
-        <h3>Web Developer</h3>
+    <div id="desc2">
+        <img id="picture" src="Assests/pics/Profilepic.png" title="proPicture" alt="profilePic" width="500">
+    </div>
+    <div id="desc">
+        <h1>Hi, I am Dilan Liyanaarachchi</h1>
+        <h2>Web Developer</h2>
         <h3>Welcome to my profile</h3>
-        <img src="Assests/pics/Profilepic.png" title="proPicture" alt="profilePic" width="200" >
+        <button id="hire_button">Hire me</button>
+        <button id="download_btn">Download CV</button>
     </div>
 </section>
+
 <!----------------- About ---------------------------->
 <section id="about">
+    <h2>About Me</h2>
     <div>
-        <h2>About Me</h2>
+        <img id="aboutMePicture" src="Assests/pics/AboutMe.png" title="aboutMePicture" alt="AboutMe" width="400">
+    </div>
+    <div>
         <p>
-            I'm Dilan Liyanaarachchi  and
-
-            I love designing layouts. I believe that having a good design is important for branding products.
+            I'm Dilan Liyanaarachchi and I love designing layouts. I believe that having a good design is important for branding products.
             To create great designs, I pay attention to layout and decorative details to make them look professional.
             Right now, I am learning UI/UX design for apps and websites to improve my skills.
         </p>
-        <img src="Assests/pics/AboutMe.png" title="aboutMePicture" alt="AboutMe" width="200">
     </div>
 </section>
+
 <!----------------- Education ---------------------------->
-<section id="project">
-<div>
-    <h2>Education</h2>
-    <h3>--Where I Learn--</h3>
-</div>
-    <div>
+<section id="education">
+    <div id="eduDescription">
+        <h2>Education</h2>
+        <h3>--Where I Learn--</h3>
+    </div>
+    <div class="school">
         <h3>Bandaragama Central College</h3>
         <h4>2009-2019</h4>
-        <img src="Assests/icons/eduBcc.png" title="eduBcc" alt="eduBcc" width="50">
+        <img src="Assests/icons/eduBcc.png" title="eduBcc" alt="eduBcc" width="120">
     </div>
-
-    <div>
+    <div class="school">
         <h3>Taxila Central College</h3>
         <h4>2019-2022</h4>
-        <img src="Assests/icons/eduTaxila.png" title="eduTcc" alt="eduTcc" width="50">
+        <img src="Assests/icons/eduTaxila.png" title="eduTcc" alt="eduTcc" width="100">
     </div>
-
-    <div>
+    <div class="school">
         <h3>Esoft Metro College</h3>
         <h4>2022-2023</h4>
-        <img src="Assests/icons/eduEsoft.png" title="eduEsft" alt="eduEsft" width="50">
+        <img src="Assests/icons/eduEsoft.png" title="eduEsft" alt="eduEsft" width="150">
     </div>
-
-    <div>
+    <div class="school">
         <h3>IJSE - Institute of Software Engineering</h3>
-        <h4>2023 Present</h4>
-        <img src="Assests/icons/eduIjse.png" title="eduIjse" alt="eduIjse" width="50">
+        <h4>2023 - Present</h4>
+        <img src="Assests/icons/eduIjse.png" title="eduIjse" alt="eduIjse" width="150">
     </div>
 </section>
-<!--------------------------- Skills---------------------------->
+
+<!--------------------------- Skills ---------------------------->
 <section id="skills">
     <h2>Skills</h2>
-    <div>
-        <img src="Assests/icons/skillJava.png" title="java" alt="java" width="100">
-        <img src="Assests/icons/skillMysql.png" title="mysql" alt="mysql" width="100">
-        <img src="Assests/icons/skillSceneBuilder.png" title="sb" alt="sb" width="100">
-        <img src="Assests/icons/skillCSS.png" title="css" alt="css" width="100">
+    <div class="skills">
+        <img src="Assests/icons/skillJava.png" title="java" alt="java" width="150">
+        <img src="Assests/icons/skillMysql.png" title="mysql" alt="mysql" width="150">
+        <img src="Assests/icons/skillSceneBuilder.png" title="sb" alt="sb" width="150">
+        <img src="Assests/icons/skillCSS.png" title="css" alt="css" width="150">
+        <img src="Assests/icons/skillsJavaScript.png" title="javascript" alt="javascript" width="150">
     </div>
-
-    <div>
-        <img src="Assests/icons/skillHtml.png" title="html" alt="html" width="100">
-        <img src="Assests/icons/skillPython.png" title="python" alt="python" width="100">
-        <img src="Assests/icons/skillFigma.png" title="figma" alt="figma" width="100">
-        <img src="Assests/icons/skillC.png" title="c" alt="c" width="100">
+    <div class="skills">
+        <img src="Assests/icons/skillHtml.png" title="html" alt="html" width="150">
+        <img src="Assests/icons/skillPython.png" title="python" alt="python" width="150">
+        <img src="Assests/icons/skillFigma.png" title="figma" alt="figma" width="150">
+        <img src="Assests/icons/skillc-sharp.png" title="c" alt="c" width="150">
+        <img src="Assests/icons/skillReact.png" title="react" alt="react" width="150">
     </div>
 </section>
 
-<!--------------------------- My Works---------------------------->
+<!--------------------------- My Works ---------------------------->
 <section id="myWorks">
     <h2>My Works</h2>
-    <div>
-        <img src="Assests/icons/iconTicTacToe.png" title="ticTacToe" alt="ticTacToe" width="120">
+    <div id="tic-tac-toe">
+        <img src="Assests/icons/tic-tac-toe.png" title="ticTacToe" alt="ticTacToe" width="280">
         <h3>Tic-Tac-Toe Game</h3>
+    </div>
+    <div id="tic-tac-desc">
         <p>
-            This is my first java based game which is developed as a part of my academic journey.
+            Tic-Tac-Toe: Championship Edition is a JavaFX-based game that I developed, incorporating advanced Object-Oriented Programming (OOP) principles.
+            It features an interactive UI built with Scene Builder and implements the Minimax algorithm for AI. It supports single-player and two-player modes,
+            using enumerations, recursion, and interfaces to enhance code maintainability.
         </p>
     </div>
-    <div>
-        <p>
-            This is my final project for the first semester, an application for a Pet Care Management System developed as part of my academic journey.
-        </p>
-        <img src="Assests/icons/petcare.png" title="petcare" alt="petcare" width="120">
+    <div id="pet-care">
+        <img src="Assests/icons/petcare.png" title="petcare" alt="petcare" width="450">
         <h3>Pet Care Management System</h3>
     </div>
+    <div id="petCAre-desc">
+        <p>
+            This is my final project for the first semester - a JavaFX-based application designed to streamline pet care center management.
+            Features include appointment scheduling, health records, SMS reminders, and Jasper report generation, all managed via a Scene Builder-designed UI.
+        </p>
+    </div>
 </section>
 
-<!--------------------------- Gallery---------------------------->
-
+<!--------------------------- Gallery ---------------------------->
 <section id="gallery">
     <h2>Gallery</h2>
-    <img src="Assests/pics/gallery1.png" title="gallery1" alt="gallery1" width="200">
-    <img src="Assests/pics/gallery2.png" title="gallery2" alt="gallery2" width="200">
-    <img src="Assests/pics/gallery3.png" title="gallery3" alt="gallery3" width="200">
-    <img src="Assests/pics/gallery4.png" title="gallery4" alt="gallery4" width="200">
-    <img src="Assests/pics/gallery5.png" title="gallery5" alt="gallery5" width="200">
-
+    <div class="images">
+        <img src="Assests/pics/gallery1.png" alt="gallery1" width="300">
+        <img src="Assests/pics/gallery6.jpg" alt="gallery6" width="300">
+        <img src="Assests/pics/gallery2.png" alt="gallery2" width="300">
+    </div>
+    <div class="images">
+        <img src="Assests/pics/gallery3.png" alt="gallery3" width="300">
+        <img src="Assests/pics/gallery5.png" alt="gallery5" width="300">
+    </div>
 </section>
 
-<!--------------------------- Contact Me---------------------------->
-
+<!--------------------------- Contact Me ---------------------------->
 <section id="contact">
     <h2>Contact Me</h2>
-    <h3>
-        Get in Touch
-    </h3>
-    <p>
-        Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be a part of your visions. Email me with any questions or inquiries. I'll happy to answer your questions and set up a meeting with you.
-    </p>
-    <h4>Name - Dilan Liyanaarachchi </h4>
-        <h4>Address - 301/B/02,Sri Sangananda Mawatha,Raigama,Bandaragama </h4>
-            <h4>Email - liyanaarachchidilan@gmail.com </h4>
+    <div class="contact-form">
+        <div id="contact-details">
+            <h3>Get in Touch</h3>
+            <p>
+                Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities
+                to be a part of your visions. Email me with any questions or inquiries. I'd be happy to answer your questions
+                and set up a meeting with you.
+            </p>
+            <div id="my_details">
+                <h4>Name - Dilan Liyanaarachchi</h4>
+                <!-- Add contact details like email/phone/socials here -->
+            </div>
+        </div>
+    </div>
 </section>
-
-
 
 </body>
 </html>
